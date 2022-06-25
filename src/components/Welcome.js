@@ -1,11 +1,14 @@
-function Welcome (props){
+import react,{component,useState} from "react";
+
+
+const Welcome = ({name})=>{
+    let hey = 'Hey ! ${name}';
+    let greetingMessage = 'Welcome to Newton School.';
     return(
-        <>
-        <h1>Hey!:{props.name}</h1>
-        <h2>Welcome to Newton School.</h2>
-        </>
-        
-        
+        <div className="main">
+            <h1>{hey}</h1>
+            <h2>{}greetingMessage</h2>
+        </div>
     )
 }
 
