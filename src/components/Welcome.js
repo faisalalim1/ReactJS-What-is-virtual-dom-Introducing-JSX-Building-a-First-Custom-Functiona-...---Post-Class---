@@ -7,7 +7,7 @@ const Welcome = ({name})=>{
     return(
         <div className="main">
             <h1>{hey}</h1>
-            <h2>{}greetingMessage</h2>
+            <h2>{greetingMessage}</h2>
         </div>
     )
 }
