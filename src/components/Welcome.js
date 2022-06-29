@@ -1,17 +1,14 @@
 // write code for Welcome component here
-import React, { Component, useState } from "react";
-import '../styles/App.css';
-
-const Welcome = ({name}) => {
-   let hey = `Hey ! ${name}`;
-   let greetMessage = `Welcome to Newton School.`;
-  return (
-    <div className="main">
-      <h1>{hey}</h1>
-      <h2>{greetMessage}</h2>
-    </div>
-  )
+import React, {Component, useState} from "react";
+function Welcome(props){
+//    
+    return(
+      <div>
+        <h1>Hey !{props.name}</h1>  
+        <h2>Welcome to Newton School.</h2>
+      </div>
+    )
 }
 
 
-export default Welcome;
+export default Welcome
